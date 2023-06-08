@@ -3,7 +3,7 @@ package ru.geekbrains.lesson4.homework;
 public abstract class Fruit {
 
     private final double WEIGHT;
-    private static String NAME;
+    private  String NAME;
 
 
     public Fruit(double weight, String name) {
@@ -15,7 +15,7 @@ public abstract class Fruit {
         return WEIGHT;
     }
 
-    public static String getNAME() {
+    public String getNAME() {
         return NAME;
     }
 

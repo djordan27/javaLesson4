@@ -22,16 +22,26 @@ public class Program {
      */
     public static void main(String[] args) {
         Apple apple1 = new Apple();
-
         Apple apple2 = new Apple();
-
         Apple apple3 = new Apple();
-        Box <Fruit> box = new Box<Fruit>();
-        box.setFruits(apple1);
-        box.setFruits(apple2);
-        box.setFruits(apple3);
-        box.getWeihtOfBox();
-        System.out.println(box.toString());
+
+        Box <Fruit> box1 = new Box<Fruit>();
+        box1.setFruits(apple1);
+        box1.setFruits(apple2);
+        box1.setFruits(apple3);
+        box1.getWeihtOfBox();
+        System.out.println(box1.toString());
+
+        Orange orange1 = new Orange();
+        Orange orange2 = new Orange();
+        Orange orange3 = new Orange();
+
+        Box <Fruit> box2 = new Box<Fruit>();
+        box2.setFruits(orange1);
+        box2.setFruits(orange2);
+        box2.setFruits(orange3);
+        box2.getWeihtOfBox();
+        System.out.println(box2.toString());
     }
 
 }

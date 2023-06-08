@@ -5,12 +5,15 @@ import java.util.ArrayList;
 public class Box <F extends Fruit> {
     public double sumOfWeigt = 0;
     public int count = 0;
-    private String name = Fruit.getNAME();
+    private String name;
 //    {sumOfWeigt = 0;
 //    count = 0;
 //    }
 
     private ArrayList<F> fruits = new ArrayList<F>();
+
+    public Box() {
+    }
 
     public ArrayList<F> getFruits(){
         return fruits;
@@ -18,6 +21,7 @@ public class Box <F extends Fruit> {
 
     public void setFruits(Fruit fruits) {
         this.fruits.add((F) fruits);
+        name = fruits.getNAME();
     }
     public double getWeihtOfBox(){
         for (; count < fruits.size(); count++) {
