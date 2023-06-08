@@ -42,6 +42,8 @@ public class Program {
         box2.setFruits(orange3);
         box2.getWeihtOfBox();
         System.out.println(box2.toString());
+        Box <Fruit> box3 = new Box<Fruit>();
+        System.out.println(box3.toString());
     }
 
 }

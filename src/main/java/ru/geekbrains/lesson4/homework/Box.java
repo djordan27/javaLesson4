@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Box <F extends Fruit> {
     public double sumOfWeigt = 0;
     public int count = 0;
-    private String name;
+    private String name = "Пустая коробка";
 //    {sumOfWeigt = 0;
 //    count = 0;
 //    }
